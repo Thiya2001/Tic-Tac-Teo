@@ -1,0 +1,50 @@
+body{
+    margin-top: 10%;
+    color: aqua;
+    background-color: #06490a;
+    margin-top: 90px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 225px;
+    margin: auto;
+    margin-right: 608px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(253, 177, 202);
+    box-shadow: 0 0 0 2px rgb(253, 177, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+#status{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+#restart{
+    margin-top: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(239, 255, 8);
+    background-color: #e70909;
+}
+.win{
+    animation: winAnimation ease-in-out 1s infinite;
+}
+@keyframes winAnimation {
+    50%{background-color: #2f6a9b;}
+    100%{background-color: #151c5a;}
+    40%{background-color: #ce28a4;}
+    30%{background-color: #fff021;}
+}
+h1{
+    text-align: center;
+
+}
